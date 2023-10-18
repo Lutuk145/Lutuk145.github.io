@@ -38,3 +38,21 @@
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  .boldLine{
+    height: 4px;
+    border-width: 0;
+    color: black;
+    background-color: black;
+  }
+  .smallLine{
+    height: 1px;
+    border-width: 0;
+    color: gray;
+    background-color: gray;
+  }
+  .midLine{
+    height: 2px;
+    border-width: 0;
+    color: rgb(36, 33, 33);
+    background-color: rgb(36, 33, 33);
+  }
