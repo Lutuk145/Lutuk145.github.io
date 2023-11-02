@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .frac {
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            letter-spacing: 0.001em;
+            text-align: center;
+        }
+        .frac > span {
+            display: block;
+            padding: 0.1em;
+        }
+        .frac span.bottom {
+            border-top: thin solid black;
+        }
+        .frac span.symbol {
+            display: none;
+        } 
+        </style>
+</head>
+<script src="./napetiAProud.js"></script>
+<body>
+    <form>
+        <label for="vodivost">Vodivost: </label>
+        <input type="number" name="vodivost" id="vodivost" value="10">
+        <select id="vodivostJednotky">
+            <option value="0"">S</option>
+            <option value="12">TS</option>
+            <option value="9">GS</option>
+            <option value="6">MS</option>
+            <option value="3">kS</option>
+            <option value="-3">mS</option>
+            <option value="-6">μS</option>
+            <option value="-9">nS</option>
+            <option value="-12">pS</option>
+        </select>
+        <br>
+        <br>
+        
+        <label for="prumer">Průměr: </label>
+        <input type="number" name="prumer" id="prumer" value="10">
+        <select id="prumerJednotky">
+            <option value="0" >mm</option>
+            <option value="15" >Tm</option>
+            <option value="12"  >Gm</option>
+            <option value="9"  >Mm</option>
+            <option value="6"  >km</option>
+            <option value="3"  >m</option>
+            <option value="-3" >μm</option>
+            <option value="-6" >nm</option>
+            <option value="-9">pm</option>
+        </select>
+        <br>
+        <br>
+        <label for="J">J: </label>
+        <input type="number" name="J" id="J" value="10">
+        <span><div class="frac">A<span></span><span class="symbol">/</span><span class="bottom">mm<sup>2</sup></span></div></span>
+    </form>
+    <div id="output"></div>
+    <br>
+    <br>
+    
+    <button><a href="../index.html">Menu</a></button>
+</body>
+</html>

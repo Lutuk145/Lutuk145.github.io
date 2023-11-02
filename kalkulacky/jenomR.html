@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .frac {
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            letter-spacing: 0.001em;
+            text-align: center;
+        }
+        .frac > span {
+            display: block;
+            padding: 0.1em;
+        }
+        .frac span.bottom {
+            border-top: thin solid black;
+        }
+        .frac span.symbol {
+            display: none;
+        } 
+        </style>
+</head>
+<script src="./jenomR.js"></script>
+<body>
+    <form>
+        <label for="napeti">Napětí: </label>
+        <input type="number" name="napeti" id="napjeti" value="10">
+        <select id="napjetiJednotky">
+            <option value="0"">V</option>
+            <option value="12">TV</option>
+            <option value="9">GV</option>
+            <option value="6">MV</option>
+            <option value="3">kV</option>
+            <option value="-3">mV</option>
+            <option value="-6">μV</option>
+            <option value="-9">nV</option>
+            <option value="-12">pV</option>
+        </select>
+        <br>
+        <br>
+        <label for="proud">Ele. Proud: </label>
+        <input type="number" name="proud" id="proud" value="10">
+        <select id="proudJednotky">
+            <option value="0">A</option>
+            <option value="12">TA</option>
+            <option value="9">GA</option>
+            <option value="6">MA</option>
+            <option value="3">kA</option>
+            <option value="-3">mA</option>
+            <option value="-6">μA</option>
+            <option value="-9">nA</option>
+            <option value="-12">pA</option>
+        </select>
+        
+        
+    </form>
+    <div id="output"></div>
+    <br>
+    <br>
+    
+    <button><a href="../index.html">Menu</a></button>
+</body>
+</html>

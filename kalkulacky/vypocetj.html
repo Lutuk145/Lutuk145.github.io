@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .frac {
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            letter-spacing: 0.001em;
+            text-align: center;
+        }
+        .frac > span {
+            display: block;
+            padding: 0.1em;
+        }
+        .frac span.bottom {
+            border-top: thin solid black;
+        }
+        .frac span.symbol {
+            display: none;
+        } 
+        </style>
+</head>
+<script src="./vypocetJ.js"></script>
+<body>
+    <form>
+        <label for="napeti">Napětí: </label>
+        <input type="number" name="napeti" id="napjeti" value="10">
+        <select id="napjetiJednotky">
+            <option value="0"">V</option>
+            <option value="12">TV</option>
+            <option value="9">GV</option>
+            <option value="6">MV</option>
+            <option value="3">kV</option>
+            <option value="-3">mV</option>
+            <option value="-6">μV</option>
+            <option value="-9">nV</option>
+            <option value="-12">pV</option>
+        </select>
+        <br>
+        <br>
+        <label for="delka">Délka: </label>
+        <input type="number" name="delka" id="delka" value="10">
+        <select id="delkaJednotky">
+            <option value="0">m</option>
+            <option value="12">Tm</option>
+            <option value="9">Gm</option>
+            <option value="6">Mm</option>
+            <option value="3">km</option>
+            <option value="-3">mm</option>
+            <option value="-6">μm</option>
+            <option value="-9">nm</option>
+            <option value="-12">pm</option>
+        </select>
+        <br>
+        <br>
+        <label for="prumer">Průměr: </label>
+        <input type="number" name="prumer" id="prumer" value="10">
+        <select id="prumerJednotky">
+            <option value="0" >mm</option>
+            <option value="15" >Tm</option>
+            <option value="12"  >Gm</option>
+            <option value="9"  >Mm</option>
+            <option value="6"  >km</option>
+            <option value="3"  >m</option>
+            <option value="-3" >μm</option>
+            <option value="-6" >nm</option>
+            <option value="-9">pm</option>
+        </select>
+        <br>
+        <br>
+        <label for="hustota">Hustota: </label>
+        <input type="number" name="hustota" id="hustota" value="10">
+        Ω 
+        <span><div class="frac"><span>mm<sup>2</sup></span><span class="symbol">/</span><span class="bottom">m</span></div></span>
+    </form>
+    <div id="output"></div>
+    <br>
+    <br>
+    
+    <button><a href="../index.html">Menu</a></button>
+</body>
+</html>
